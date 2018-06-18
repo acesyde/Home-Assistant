@@ -1,53 +1,34 @@
-customize_glob:
-  weblink.*:
-    icon: mdi:web
+switch.catch_all:
+  icon: mdi:help-circle
 
-customize:
-  input_text.github_message:
-    icon: mdi:pencil
+script.sync_dropbox:
+  icon: mdi:dropbox
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: "Sync To Dropbox"
 
-  switch.catch_all:
-    icon: mdi:help-circle
+script.quick_reboot:
+  icon: mdi:server-network
+  can_cancel: false
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: "Reboot Node-Zero"
 
-  script.sync_dropbox:
-    icon: mdi:dropbox
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: "Sync To Dropbox"
+script.quick_restart:
+  icon: mdi:home-assistant
+  can_cancel: false
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: "Restart Homeassistant"
 
-  script.github_push:
-    icon: mdi:github-circle
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: "Push to Github"
+script.zwave_on:
+  icon: mdi:check-circle-outline
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: Zwave On
 
-  script.github_pull:
-    icon: mdi:github-box
-    can_cancel: false
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: "Guthub Pull And Restart"
+script.zwave_off:
+  icon: mdi:close-octagon-outline
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: Zwave Off
 
-  script.quick_reboot:
-    icon: mdi:server-network
-    can_cancel: false
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: "Reboot Node-Zero"
-
-  script.quick_restart:
-    icon: mdi:home-assistant
-    can_cancel: false
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: "Restart Homeassistant"
-
-  script.zwave_on:
-    icon: mdi:check-circle-outline
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: Zwave On
-
-  script.zwave_off:
-    icon: mdi:close-octagon-outline
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: Zwave Off
-
-  script.zwave_include:
-    icon: mdi:plus-circle-outline
-    custom_ui_state_card: state-card-script-custom-text
-    custom_text: "Add New Device (Secure)"
+script.zwave_include:
+  icon: mdi:plus-circle-outline
+  custom_ui_state_card: state-card-script-custom-text
+  custom_text: "Add New Device (Secure)"

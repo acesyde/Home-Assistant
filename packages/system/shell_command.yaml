@@ -1,10 +1,5 @@
-shell_command:
-  github_pull: ~/packages/system/scripts/pull-from-github.sh
+sync_dropbox: ~/packages/system/scripts/sync-dropbox.sh "{{ password }}" "{{ url }}"
 
-  github_push: ~/packages/system/scripts/send-to-github.sh "{{ states('input_text.github_message') }}"
+quick_restart: sudo systemctl restart home-assistant@homeassistant.service
 
-  sync_dropbox: ~/packages/system/scripts/sync-dropbox.sh "{{ password }}" "{{ url }}"
-
-  quick_restart: sudo systemctl restart home-assistant@homeassistant.service
-
-  quick_reboot: sudo reboot
+quick_reboot: sudo reboot

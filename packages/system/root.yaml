@@ -7,11 +7,13 @@
 #                                              #
 ################################################
 
-homeassistant:
-  alert: !include alert.yaml
-  automation: !include automation.yaml
+homeassistant:  
+  customize_glob: !include customize_glob.yaml
   customize: !include customize.yaml
-  script: !include script.yaml
-  shell_command: !include shell_command.yaml
-  switch: !include switch.yaml
-  weblink: !include weblink.yaml
+
+alert: !include alert.yaml
+automation: !include automation.yaml
+script: !include script.yaml
+shell_command: !include shell_command.yaml
+switch: !include switch.yaml
+weblink: !include weblink.yaml
