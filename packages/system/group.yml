@@ -1,0 +1,34 @@
+group:
+  Maintenance:
+    control: hidden
+    entities:
+      - input_boolean.maintenance_mode
+      - switch.catch_all
+      - sensor.hline_1
+      - script.quick_restart
+      - script.quick_reboot
+      - script.github_pull
+      - sensor.hline_2
+      - input_text.github_message
+      - script.github_push
+      - weblink.github
+      - sensor.hline_3
+      - script.sync_dropbox
+      - weblink.dropbox
+
+  Configure external:
+      - weblink.configure_alexa
+      - weblink.router
+      - weblink.uptime_robot
+
+  Zwave:
+    control: hidden
+    entities:
+      - zwave.zwaveme_zme_uzb1_usb_stick
+      - script.zwave_on
+      - script.zwave_off
+      - script.zwave_include
+
+  developer:
+    icon: mdi:help-circle
+    entities: group.catchall

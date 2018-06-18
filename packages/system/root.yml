@@ -1,0 +1,17 @@
+################################################
+#                                              #
+# This package creates a device that allows me #
+# to set a boolean to show the system in       #
+# "Maintenance Mode", and manage backing up,   #
+# upgrading and pulling config from Github     #
+#                                              #
+################################################
+
+homeassistant:
+  alert: !include alert.yml
+  automation: !include automation.yml
+  customize: !include customize.yml
+  script: !include script.yml
+  shell_command: !include shell_command.yml
+  switch: !include switch.yml
+  weblink: !include weblink.yml

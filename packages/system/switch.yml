@@ -1,0 +1,33 @@
+switch:
+  platform: template
+  switches:
+    catch_all:
+      friendly_name: Show Catch-all
+      value_template: "{{ is_state_attr('group.developer' , 'view' , true) }}"
+      turn_on:
+        - service: python_script.populate_catchall_group
+        - service: group.set
+          data:
+            object_id: developer
+            view: true
+            visible: true
+      turn_off:
+        - service: group.set
+          data:
+            object_id: developer
+            view: false
+            visible: false
+        - service: group.remove
+          data:
+            object_id: catchall
+
+input_boolean:
+  maintenance_mode:
+    name: Maintenance mode
+    icon: mdi:auto-fix
+
+
+input_text:
+  github_message:
+    name: Commit Message
+    initial: Push from local

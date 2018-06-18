@@ -1,2 +1,29 @@
-# Home-Assistant
-Home-Assistant-Config
+# My Home Assistant setup:
+
+This is my current Home Automation setup, based on Homeassistant.  This is my live system as it is running in my house at the moment.  I am currently tracking the beta channel of releases.  Below you will find links to how it is all organised, and I am in the process of adding a Wiki to this site that will explain how to create a system like mine from scratch...
+
+## Information
+
+| [![TravisCI](https://travis-ci.org/acesyde/Home-Assistant.svg?branch=master)](https://travis-ci.org/acesyde/Home-Assistant) | [![LastCommit](https://img.shields.io/github/last-commit/acesyde/Home-Assistant.svg?color=blue&style=plasticr)](https://github.com/acesyde/Home-Assistant/commits/master)|
+|:---:|:---:|
+| This shows whether the configuration in this repo is valid. [Version I'm running.](.HA_VERSION) | This shows how up to date this repo is |
+| [![GitHub stars](https://img.shields.io/github/stars/acesyde/Home-Assistant.svg)](https://github.com/acesyde/Home-Assistant/stargazers) | [![GitHub issues](https://img.shields.io/github/issues/acesyde/Home-Assistant.svg)](https://github.com/acesyde/Home-Assistant/issues) |
+| Please :star: this repo if you find it useful, like these people have. | This is like my TODO list |
+|[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)| [![contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat)](https://github.com/acesyde/Home-Assistant/pulls) |
+| This tells you you can use anything you like from this repo for your project, gratis! | If you have any ideas, they're always welcome.  Either submit an issue or a PR, or drop me a message! |
+| [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m780352466-da3a90fa1da0e09f6f0ee745.svg)](https://uptimerobot.com/) |  |
+|  |  |
+
+## House:
+
+- A living area (Living room and kitchen/diner)
+- 3 bedrooms and bathroom
+- 1 desk office
+
+Click [here](documentation/hardware_software.md) to see the Hardware and Software I am using around the house.
+
+## Configuration
+
+Click [here](documentation/configuration.md) to see how I've configured it and how this repo is organised.
+
+Click [here](documentation/backups.md) to see how I keep everything running smoothly by monitoring my instances uptime, checking the validity of my config and managing backups.

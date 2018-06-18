@@ -1,0 +1,53 @@
+customize_glob:
+  weblink.*:
+    icon: mdi:web
+
+customize:
+  input_text.github_message:
+    icon: mdi:pencil
+
+  switch.catch_all:
+    icon: mdi:help-circle
+
+  script.sync_dropbox:
+    icon: mdi:dropbox
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: "Sync To Dropbox"
+
+  script.github_push:
+    icon: mdi:github-circle
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: "Push to Github"
+
+  script.github_pull:
+    icon: mdi:github-box
+    can_cancel: false
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: "Guthub Pull And Restart"
+
+  script.quick_reboot:
+    icon: mdi:server-network
+    can_cancel: false
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: "Reboot Node-Zero"
+
+  script.quick_restart:
+    icon: mdi:home-assistant
+    can_cancel: false
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: "Restart Homeassistant"
+
+  script.zwave_on:
+    icon: mdi:check-circle-outline
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: Zwave On
+
+  script.zwave_off:
+    icon: mdi:close-octagon-outline
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: Zwave Off
+
+  script.zwave_include:
+    icon: mdi:plus-circle-outline
+    custom_ui_state_card: state-card-script-custom-text
+    custom_text: "Add New Device (Secure)"

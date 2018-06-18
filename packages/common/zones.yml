@@ -1,0 +1,12 @@
+zone:
+  - name: Boulet PE
+    radius: 250
+    latitude: !secret location_lat_work_pe
+    longitude: !secret location_lon_work_pe
+    icon: mdi:briefcase
+
+  - name: Boulot Aurore
+    radius: 500
+    latitude: !secret location_lat_work_ab
+    longitude: !secret location_lon_work_ab
+    icon: mdi:medical-bag

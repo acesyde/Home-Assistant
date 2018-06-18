@@ -1,0 +1,59 @@
+script:
+  github_pull:
+    alias: ' '
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.maintenance_mode
+      - delay: 00:00:02
+      - service: shell_command.github_pull
+
+  github_push:
+    alias: ' '
+    sequence:
+      - condition: template
+        value_template: "{{ not is_state('input_text.github_message' , '' ) }}"
+      - service: shell_command.github_push
+      - service: persistent_notification.create
+        data:
+          notification_id: "Github_push_alert"
+          title: "Github"
+          message: "You have pushed your local files to github, you must merge the branches on github then sync the master branch here."
+
+  sync_dropbox:
+    alias: ' '
+    sequence:
+      - service: shell_command.sync_dropbox
+        data:
+          password: !secret api_password
+          url: !secret done_url
+
+  quick_restart:
+    alias: ' '
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.maintenance_mode
+      - delay: 00:00:02
+      - service: shell_command.quick_restart
+
+  quick_reboot:
+    alias: ' '
+    sequence:
+      - service: homeassistant.turn_on
+        entity_id: input_boolean.maintenance_mode
+      - delay: 00:00:02
+      - service: shell_command.quick_reboot
+
+  zwave_on:
+    alias: ' '
+    sequence:
+      - service: zwave.start_network
+
+  zwave_off:
+    alias: ' '
+    sequence:
+      - service: zwave.stop_network
+
+  zwave_include:
+    alias: ' '
+    sequence:
+      - service: zwave.add_node_secure

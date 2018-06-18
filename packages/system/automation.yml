@@ -1,0 +1,11 @@
+automation:
+  # TODO - Perform a backup automatically
+  # TODO - Status check
+  - alias: Maintenance - Notify when backups completed
+    trigger:
+      platform: event
+      event_type: done_sync
+    action:
+      service: notify.mf
+      data:
+        message: "The dropbox sync has finished."
