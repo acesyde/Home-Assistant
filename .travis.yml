@@ -4,7 +4,7 @@ python: "3.6.4"
 
 before_install:
   - touch fake.pem
-  - mv extras/github_resources/secrets_redacted.yaml secrets.yaml
+  - mv .build/secrets_redacted.yaml secrets.yaml
 
 install: pip3 install homeassistant
 
