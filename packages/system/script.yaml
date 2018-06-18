@@ -25,7 +25,7 @@ script:
       - service: shell_command.sync_dropbox
         data:
           password: !secret api_password
-          url: !secret done_url
+          url: !secret sync_dropbox_done_url
 
   quick_restart:
     alias: ' '
