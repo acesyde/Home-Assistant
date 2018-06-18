@@ -20,6 +20,10 @@ homeassistant:
   unit_system: metric
 
   packages:
+    # Common
     common_http: !include packages/common/http.yaml
     common_zones: !include packages/common/zones.yaml
+    # Rooms
+    bathroom: !include packages/rooms/bathroom/root.yaml
+    # System
     system_group: !include packages/system/root.yaml
