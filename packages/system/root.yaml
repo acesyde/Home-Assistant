@@ -8,10 +8,10 @@
 ################################################
 
 homeassistant:
-  alert: !include alert.yml
-  automation: !include automation.yml
-  customize: !include customize.yml
-  script: !include script.yml
-  shell_command: !include shell_command.yml
-  switch: !include switch.yml
-  weblink: !include weblink.yml
+  alert: !include alert.yaml
+  automation: !include automation.yaml
+  customize: !include customize.yaml
+  script: !include script.yaml
+  shell_command: !include shell_command.yaml
+  switch: !include switch.yaml
+  weblink: !include weblink.yaml

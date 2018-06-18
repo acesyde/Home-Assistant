@@ -20,5 +20,5 @@ homeassistant:
   unit_system: metric
 
   packages:
-    common_zones: !include packages/common/zones.yml
-    system_group: !include packages/system/root.yml
+    common_zones: !include packages/common/zones.yaml
+    system_group: !include packages/system/root.yaml
