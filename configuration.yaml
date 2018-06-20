@@ -27,6 +27,7 @@ homeassistant:
 group: !include config/groups.yaml
 http: !include config/http.yaml
 logger: !include config/logger.yaml
+mqtt: !include config/mqtt.yaml
 notify: !include config/notify.yaml
 zone: !include config/zones.yaml
 panel_iframe: !include config/panel_iframes.yaml

@@ -1,0 +1,6 @@
+#--------------
+# DEVICE TRACKERS
+#--------------
+
+device_tracker:
+  - platform: owntracks
