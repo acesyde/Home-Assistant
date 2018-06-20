@@ -29,7 +29,7 @@ sensor:
       - upload
   - platform: systemmonitor
     resources:
-      - type: load_5m
+      - type: processor_use
       - type: memory_free
       - type: last_boot
 
