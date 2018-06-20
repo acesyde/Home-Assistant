@@ -1,0 +1,21 @@
+config:
+
+updater:
+
+conversation:
+
+history:
+
+logbook:
+
+map:
+
+frontend:
+
+sun:
+
+tts:
+  - platform: google
+
+logger:
+  default: warn
