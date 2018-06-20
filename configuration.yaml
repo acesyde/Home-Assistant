@@ -23,7 +23,11 @@ homeassistant:
     # Common
     common_http: !include packages/common/http.yaml
     common_zones: !include packages/common/zones.yaml
+    # Security
+    security: !include packages/security/root.yaml
+    # Trash
+    trash: !include packages/trash/root.yaml
     # Rooms
     bathroom: !include packages/rooms/bathroom/root.yaml
     # System
-    system_group: !include packages/system/root.yaml
+    system: !include packages/system/root.yaml
