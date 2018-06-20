@@ -15,23 +15,30 @@ homeassistant:
   latitude: !secret latitude
   longitude: !secret longitude
   elevation: !secret elevation
+  
+  temperature_unit: C
 
   time_zone: !secret time_zone
   unit_system: metric
 
-  packages:
-    # Common
-    common_service: !include packages/common/service.yaml
-    common_http: !include packages/common/http.yaml
-    common_zones: !include packages/common/zones.yaml
-    # Security
-    security: !include packages/security/root.yaml
-    # Trash
-    trash: !include packages/trash/root.yaml
-    # Rooms
-    bathroom: !include packages/rooms/bathroom/root.yaml
-    # System
-    system: !include packages/system/root.yaml
+  packages: !include_dir_named packages
 
+# Includes
+group: !include config/groups.yaml
+http: !include config/http.yaml
+logger: !include config/logger.yaml
+notify: !include config/notify.yaml
+zone: !include config/zones.yaml
+panel_iframe: !include config/panel_iframes.yaml
+tts: !include config/tts.yaml
 
-group: !include groups.yaml
+# Base configuration
+cloud:
+config:
+conversation:
+frontend:
+history:
+logbook:
+map:
+sun:
+updater:

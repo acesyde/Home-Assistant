@@ -1,5 +1,0 @@
-sync_dropbox: ~/packages/system/scripts/sync-dropbox.sh "{{ password }}" "{{ url }}"
-
-quick_restart: sudo systemctl restart home-assistant@homeassistant.service
-
-quick_reboot: sudo reboot
