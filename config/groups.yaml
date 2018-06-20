@@ -1,3 +1,31 @@
+# ------------------
+# HOME
+# ------------------
 default_view:
   view: yes
+  name: Home
   icon: mdi:home
+
+# ------------------
+# SECURITY
+# ------------------
+security:
+  view: yes
+  name: Security
+  icon: mdi:security
+
+# ------------------
+# Flowers
+# ------------------
+flower:
+  view: yes
+  name: Flowers
+  icon: mdi:flower
+
+# ------------------
+# System
+# ------------------
+system:
+  view: yes
+  name: System
+  icon: mdi:cellphone-arrow-down
