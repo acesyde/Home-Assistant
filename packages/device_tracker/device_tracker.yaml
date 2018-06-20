@@ -4,3 +4,10 @@
 
 device_tracker:
   - platform: owntracks
+
+group:
+  presence:
+    name: Family
+    view: no
+    entities:
+      - device_tracker.pe_phonepe
