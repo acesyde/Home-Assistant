@@ -21,6 +21,7 @@ homeassistant:
 
   packages:
     # Common
+    common_service: !include packages/common/service.yaml
     common_http: !include packages/common/http.yaml
     common_zones: !include packages/common/zones.yaml
     # Security
