@@ -52,7 +52,7 @@ flower:
 system:
   view: yes
   name: System
-  icon: mdi:cellphone-arrow-down
+  icon: mdi:settings
   entities:
     - group.raspberry
     - group.speedtest

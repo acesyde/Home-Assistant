@@ -6,8 +6,8 @@ group:
     name: Raspberry
     view: no
     entities:
-      - sensor.cpu_use
-      - sensor.ram_free
+      - sensor.processor_use
+      - sensor.memory_free
       - sensor.last_boot
 
   speedtest:
