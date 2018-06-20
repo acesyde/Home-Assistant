@@ -6,7 +6,7 @@ device_tracker:
   - platform: owntracks
 
 group:
-  presence:
+  familypresence:
     name: Family
     view: no
     entities:
