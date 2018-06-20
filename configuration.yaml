@@ -32,3 +32,6 @@ homeassistant:
     bathroom: !include packages/rooms/bathroom/root.yaml
     # System
     system: !include packages/system/root.yaml
+
+
+group: !include groups.yaml

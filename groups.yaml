@@ -1,0 +1,35 @@
+# homepage
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.date_and_time
+    - group.weather_overview
+    - group.sun
+    - group.daily_forecast
+    - group.trash_schedule
+    - group.recycle_schedule
+
+date and time:
+  name: Date & Time
+  view: no
+
+weather overview:
+  name: Weather Overview
+  view: no
+
+sun:
+  name: Sun
+  view: no
+  entities:
+    - sun.sun
+    - sensor.moon
+
+daily forcast:
+  name: Daily Forcast
+  view: no
+  entities:
+    - sensor.pws_temp_high_1d_c
+    - sensor.pws_temp_high_2d_c
+    - sensor.pws_temp_high_3d_c
+    - sensor.pws_temp_high_4d_c
