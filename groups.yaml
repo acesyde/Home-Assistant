@@ -13,10 +13,21 @@ default_view:
 date and time:
   name: Date & Time
   view: no
+  entities:
+    - sensor.date
+    - sensor.time
+    - sensor.claire_time
+    - sensor.mum_time
 
 weather overview:
   name: Weather Overview
   view: no
+  entities:
+    - sensor.pws_temp_c
+    - sensor.pws_relative_humidity
+    - sensor.pws_precip_1d
+    - sensor.pws_wind_kph
+    - sensor.pws_alerts
 
 sun:
   name: Sun
