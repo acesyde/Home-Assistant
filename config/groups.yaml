@@ -23,6 +23,8 @@ livingroom:
   view: yes
   name: Living room
   icon: mdi:sofa
+  entities:
+    - media_player.living_room_tv
 
 # ------------------
 # Desk office
