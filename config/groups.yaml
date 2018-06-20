@@ -5,6 +5,8 @@ default_view:
   view: yes
   name: Home
   icon: mdi:home
+  entities:
+    - group.weather
 
 # ------------------
 # SECURITY
