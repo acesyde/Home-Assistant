@@ -32,3 +32,7 @@ automation:
       data_template:
         addon: 7be23ff5_dropbox_sync
         input: {"command":"upload"}
+    - service: notify.pushbullet
+      data:
+        title: HASSIO Backup
+        message: Backup is done
