@@ -53,3 +53,6 @@ system:
   view: yes
   name: System
   icon: mdi:cellphone-arrow-down
+  entities:
+    - group.raspberry
+    - group.speedtest
