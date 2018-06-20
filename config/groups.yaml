@@ -15,6 +15,30 @@ security:
   icon: mdi:security
 
 # ------------------
+# Living room
+# ------------------
+livingroom:
+  view: yes
+  name: Living room
+  icon: mdi:sofa
+
+# ------------------
+# Desk office
+# ------------------
+deskoffice:
+  view: yes
+  name: Desk office
+  icon: mdi:desk-lamp
+
+# ------------------
+# Bed rooms
+# ------------------
+bedrooms:
+  view: yes
+  name: Bed rooms
+  icon: mdi:hotel
+
+# ------------------
 # Flowers
 # ------------------
 flower:
