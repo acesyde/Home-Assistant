@@ -24,7 +24,7 @@ plant:
         battery: sensor.anthurium_andraeanum_battery
         temperature: sensor.anthurium_andraeanum_temperature
         conductivity: sensor.anthurium_andraeanum_conductivity
-        brightness: sensor.anthurium_andraeanum_brightness
+        brightness: sensor.anthurium_andraeanum_light_intensity
       min_moisture: 23
       max_moisture: 65
       min_battery: 15
@@ -41,7 +41,7 @@ plant:
         battery: sensor.stephanotis_floribunda_battery
         temperature: sensor.stephanotis_floribunda_temperature
         conductivity: sensor.stephanotis_floribunda_conductivity
-        brightness: sensor.stephanotis_floribunda_brightness
+        brightness: sensor.stephanotis_floribunda_light_intensity
       min_moisture: 23
       max_moisture: 65
       min_battery: 15
