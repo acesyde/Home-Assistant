@@ -1,0 +1,24 @@
+#--------------
+# GROUP
+#--------------
+group:
+
+#--------------
+# SENSORS
+#--------------
+sensor:
+  - platform: zigate
+    name: 'Master bedroom Sensor'
+    address: !secret zigate_sensor_master_bedroom_address
+    default_state: temperature
+    default_unit: '°C'
+  - platform: zigate
+    name: 'First Child bedroom Sensor'
+    address: !secret zigate_sensor_first_child_bedroom_address
+    default_state: temperature
+    default_unit: '°C'
+  - platform: zigate
+    name: 'Second Child bedroom Sensor'
+    address: !secret zigate_sensor_second_child_bedroom_address
+    default_state: temperature
+    default_unit: '°C'
