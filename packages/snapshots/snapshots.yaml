@@ -7,10 +7,10 @@
 automation:
 
 ## Create daily snapshot of hassio
-  - alias: Daily Backup at 3 AM
+  - alias: Daily Backup at 3AM
     trigger:
       platform: time
-      at: '3:00:00'
+      at: '03:00:00'
     action:
     - service: hassio.snapshot_full
       data_template:
@@ -20,7 +20,7 @@ automation:
   - alias: Upload dropbox 4AM
     trigger:
       platform: time
-      at: '4:00:00'
+      at: '04:00:00'
     action:
     - service: hassio.addon_stdin
       data_template:
