@@ -50,6 +50,9 @@ flower:
   view: yes
   name: Flowers
   icon: mdi:flower
+  entities:
+    - plant.anthurium_andraeanum
+    - plant.stephanotis_floribunda
 
 # ------------------
 # System

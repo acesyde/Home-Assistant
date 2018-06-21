@@ -3,6 +3,18 @@
 #---------
 
 #---------
+# Customize
+#---------
+homeassistant:
+  customize:
+    plant.anthurium_andraeanum:
+      friendly_name: Anthurium andraeanum (Living room)
+      entity_picture: /local/flowers/anthurium_andreanum.jpg
+    plant.stephanotis_floribunda:
+      friendly_name: Stephanotis floribunda (Living room)
+      entity_picture: /local/flowers/stephanotis_floribunda.jpg
+
+#---------
 # Plant
 #---------
 plant:
