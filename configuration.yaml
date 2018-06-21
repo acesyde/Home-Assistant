@@ -31,6 +31,7 @@ mqtt: !include config/mqtt.yaml
 notify: !include config/notify.yaml
 zone: !include config/zones.yaml
 panel_iframe: !include config/panel_iframes.yaml
+telegram_bot: !include config/telegram_bot.yaml
 tts: !include config/tts.yaml
 weather: !include config/weather.yaml
 

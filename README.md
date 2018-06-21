@@ -20,8 +20,6 @@ This is my current Home Automation setup, based on Homeassistant.  This is my li
 - 3 bedrooms and bathroom
 - 1 desk office
 
-Click [here](documentation/hardware_software.md) to see the Hardware and Software I am using around the house.
-
 ## Hardware:
 
 ### My controller
