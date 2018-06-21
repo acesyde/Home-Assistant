@@ -50,3 +50,10 @@ Click [here](documentation/hardware_software.md) to see the Hardware and Softwar
 Click [here](documentation/configuration.md) to see how I've configured it and how this repo is organised.
 
 Click [here](packages/snapshots/README.md) to see how I keep everything running smoothly by monitoring my instances uptime, checking the validity of my config and managing backups.
+
+## Inspirated By
+
+* [mf-social](https://github.com/mf-social/Home-Assistant)
+* [ntalekt](https://github.com/ntalekt/homeassistant)
+* [stanvx](https://github.com/stanvx/Home-Assistant-Configuration)
+* [JamesMcCarthy79](https://github.com/JamesMcCarthy79/Home-Assistant-Config)
