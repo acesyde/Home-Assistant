@@ -22,8 +22,31 @@ This is my current Home Automation setup, based on Homeassistant.  This is my li
 
 Click [here](documentation/hardware_software.md) to see the Hardware and Software I am using around the house.
 
+## Hardware:
+
+### My controller
+ - RPI 3
+ - Zigate
+ - USB Z-Wave+ - Everspring
+
+## Integrated platforms:
+
+### Networking
+ - Netgear R7000 router - connecting everything together.
+ - TP-Link TL-SG1016D 16 ports switch - allowing to have lots of wired connections for reliability.
+
+### Xiaomi
+ - Xiaomi Aqara Temperature Humidity Sensor x5
+
+### Media
+ - LG TV with Web OS 3
+
+### Interfaces
+ - 2 x Amazon Echo Dots - for voice control.
+ - Telegram App (on mobiles) - for two-way conversations with Homeassistant.
+
 ## Configuration
 
 Click [here](documentation/configuration.md) to see how I've configured it and how this repo is organised.
 
-Click [here](documentation/backups.md) to see how I keep everything running smoothly by monitoring my instances uptime, checking the validity of my config and managing backups.
+Click [here](packages/snapshots/README.md) to see how I keep everything running smoothly by monitoring my instances uptime, checking the validity of my config and managing backups.

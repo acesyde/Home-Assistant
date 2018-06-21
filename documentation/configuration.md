@@ -12,8 +12,6 @@ There are various ways to split the configuration.yaml in to smaller chunks with
 
 I've chosen to split the configuration in to packages (detailed here > https://home-assistant.io/docs/configuration/packages/ ), and create devices or utilities by grouping components and sensors together.  These are placed in a folder called `packages/` .  Where a config item is really long (like the list of ir codes to control my AV devices) I have used includes to keep things neat.
 
-I then have an `extras/` folder that contains my bash scripts, includes and Github resources (including a redacted version of my `secrets.yaml` ).  I also have a `private/` folder that contains things relevant to my installation but I don't want to upload to Github as they contain sensitive information and sanitised versions will be of no use to anyone.
-
 The end result looks like this:
 
 ```
@@ -24,30 +22,12 @@ The end result looks like this:
     |- travis.yml
     |- [other unmovable configuration files and directories]
     |
-    |-----/private/
+    |-----/config/
     |      |
-    |      |- [useful things that don't belong on Github]
+    |      |- [General configuration]
     |
     |
     |-----/packages/
     |      |
     |      |[file per package]
-    |
-    |
-    |-----/extras/
-           |
-           |-----/bash_scripts/
-           |      |
-           |      |-[useful scripts that can be called from Homeassistant]
-           |
-           |
-           |-----/github_resources/
-           |      |
-           |      |- secrets_redacted.yaml
-           |      |
-           |      |-[readme files, screenshots and guides]
-           |
-           |-----/includes/
-                  |
-                  |-[included files for long configuration options]
 ```
