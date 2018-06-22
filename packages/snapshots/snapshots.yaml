@@ -8,6 +8,7 @@ automation:
 
 ## Create daily snapshot of hassio
   - alias: Daily Backup at 3AM
+    initial_state: true
     trigger:
       platform: time
       at: '03:00:00'
@@ -18,6 +19,7 @@ automation:
     
 ## Upload snapshot to Dropbox
   - alias: Upload dropbox 4AM
+    initial_state: true
     trigger:
       platform: time
       at: '04:00:00'
@@ -26,6 +28,7 @@ automation:
       data_template:
         addon: 7be23ff5_dropbox_sync
         input: {"command":"upload"}
+    - delay: 00:01:00
     - service: notify.telegram
       data:
         title: HASSIO Backup
