@@ -42,6 +42,8 @@ bedrooms:
   view: yes
   name: Bed rooms
   icon: mdi:hotel
+  entities:
+    - group.bedrooms_temperature
 
 # ------------------
 # Flowers

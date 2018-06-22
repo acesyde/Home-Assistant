@@ -2,6 +2,12 @@
 # GROUP
 #--------------
 group:
+  bedrooms_temperature:
+    name: Bedrooms Temperature
+    view: no
+    entities:
+      - sensor.master_bedroom_sensor
+      - sensor.second_child_bedroom_sensor
 
 #--------------
 # SENSORS
