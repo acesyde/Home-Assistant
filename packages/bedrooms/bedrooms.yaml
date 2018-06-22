@@ -9,6 +9,16 @@ group:
       - sensor.master_bedroom_sensor
       - sensor.second_child_bedroom_sensor
 
+#---------
+# Customize
+#---------
+homeassistant:
+  customize:
+    sensor.master_bedroom_sensor:
+      friendly_name: "Master bedroom"
+    sensor.second_child_bedroom_sensor:
+      friendly_name: "Second child bedroom"
+
 #--------------
 # SENSORS
 #--------------
