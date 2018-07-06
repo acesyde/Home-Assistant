@@ -6,18 +6,18 @@ group:
     name: Bedrooms Temperature
     view: no
     entities:
-      - lumi.158d0001fa5dbf
-      - lumi.158d0001f52cbc
-      - lumi.158d0001f52fce
+      - sensor.temperature_158d0001fa5dbf
+      - sensor.temperature_158d0001f52cbc
+      - sensor.temperature_158d0001f52fce
 
 #---------
 # Customize
 #---------
 homeassistant:
   customize:
-    lumi.158d0001fa5dbf:
+    sensor.temperature_158d0001fa5dbf:
       friendly_name: "Master bedroom"
-    lumi.158d0001f52cbc:
+    sensor.temperature_158d0001f52cbc:
       friendly_name: "First child bedroom"
-    lumi.158d0001f52fce:
+    sensor.temperature_158d0001f52fce:
       friendly_name: "Second child bedroom"
