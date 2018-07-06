@@ -6,35 +6,18 @@ group:
     name: Bedrooms Temperature
     view: no
     entities:
-      - sensor.master_bedroom_sensor
-      - sensor.second_child_bedroom_sensor
+      - lumi.158d0001fa5dbf
+      - lumi.158d0001f52cbc
+      - lumi.158d0001f52fce
 
 #---------
 # Customize
 #---------
 homeassistant:
   customize:
-    sensor.master_bedroom_sensor:
+    lumi.158d0001fa5dbf:
       friendly_name: "Master bedroom"
-    sensor.second_child_bedroom_sensor:
+    lumi.158d0001f52cbc:
+      friendly_name: "First child bedroom"
+    lumi.158d0001f52fce:
       friendly_name: "Second child bedroom"
-
-#--------------
-# SENSORS
-#--------------
-sensor:
-  - platform: zigate
-    name: 'Master bedroom Sensor'
-    address: !secret zigate_sensor_master_bedroom_address
-    default_state: temperature
-    default_unit: '°C'
-  - platform: zigate
-    name: 'First Child bedroom Sensor'
-    address: !secret zigate_sensor_first_child_bedroom_address
-    default_state: temperature
-    default_unit: '°C'
-  - platform: zigate
-    name: 'Second Child bedroom Sensor'
-    address: !secret zigate_sensor_second_child_bedroom_address
-    default_state: temperature
-    default_unit: '°C'
