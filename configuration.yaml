@@ -34,6 +34,7 @@ panel_iframe: !include config/panel_iframes.yaml
 telegram_bot: !include config/telegram_bot.yaml
 tts: !include config/tts.yaml
 weather: !include config/weather.yaml
+xiaomi_aqara: !include config/xiaomi_aqara.yaml
 
 # Base configuration
 cloud:
