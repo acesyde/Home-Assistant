@@ -17,9 +17,7 @@ security:
   name: Security
   icon: mdi:security
   entities:
-    - alarm_control_panel.home_alarm
-    - group.all_door_sensor
-    - group.all_motion
+    - group.alarm
 
 # ------------------
 # Living room
