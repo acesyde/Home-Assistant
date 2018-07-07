@@ -16,6 +16,8 @@ security:
   view: yes
   name: Security
   icon: mdi:security
+  entities:
+    - alarm_control_panel.home_alarm
 
 # ------------------
 # Living room
