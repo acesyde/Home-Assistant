@@ -9,7 +9,7 @@ alarm_control_panel:
 # Groups
 #--------------
 group:
-  alldoorsensor:
+  all_door_sensor:
     name: All Door Sensor
     view: no
     entities:
@@ -17,7 +17,7 @@ group:
       - binary_sensor.door_window_sensor_158d0002092151
       - binary_sensor.door_window_sensor_158d00020b5dfa
       - binary_sensor.door_window_sensor_158d00020b7e71
-  allmotion:
+  all_motion:
     name: All Motion
     view: no
     entities:
